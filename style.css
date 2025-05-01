@@ -1,122 +1,120 @@
-/* Загальні налаштування */
+/* Загальні стилі */
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #fef7e0;
-  color: #1a1a1a;
-  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f8fb;
+  color: #333;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
+/* Заголовок сайту */
 header {
-  background-color: #ffb300;
-  color: #fff;
+  background-color: #0077cc;
+  color: white;
+  padding: 40px 20px;
   text-align: center;
-  padding: 2rem 1rem;
 }
 
-.logo img {
-  width: 100px;
-  margin-bottom: 1rem;
+header h1 {
+  font-size: 36px;
+  margin: 0;
 }
 
-main {
-  padding: 2rem 1rem;
-  max-width: 900px;
-  margin: auto;
+/* Контейнер секцій */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-.app {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.app-container {
+/* Секція додатку */
+.app-section {
   display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.app-section:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .app-image {
   width: 120px;
-  flex-shrink: 0;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: 120px;
+  object-fit: contain;
+  margin-right: 40px;
 }
 
-.app-content {
+.app-text {
   flex: 1;
 }
 
-.app h2 {
-  color: #0077b6;
+.app-text h2 {
   margin-top: 0;
+  font-size: 28px;
+  color: #0077cc;
 }
 
-.platforms {
-  font-weight: bold;
-  margin-top: 1rem;
-  color: #333;
+.app-text p {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
+/* Кнопка завантаження */
 .download-button {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #0070f3;
-  color: #fff;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #0077cc;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .download-button:hover {
-  background-color: #0059c1;
+  background-color: #005fa3;
 }
 
-footer {
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  background-color: #eeeeee;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #444;
 }
 
-a {
-  color: #0077b6;
-  text-decoration: none;
-}
-
-a:hover {
+.footer .terms-button {
+  color: #00aaff;
+  margin-left: 20px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
-/* Адаптивність */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
+.footer .terms-button:hover {
+  color: #66ccff;
+}
 
-  .app {
-    padding: 1rem;
-  }
+/* Сторінка Terms */
+.terms-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
 
-  .app-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.terms-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
 
-  .app-content {
-    text-align: left;
-  }
+.terms-container p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #444;
 }
