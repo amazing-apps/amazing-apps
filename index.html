@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MINUTE: Прогноз погоди</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MINUTE & Radar Now</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>MINUTE</h1>
-    <p>Погодний прогноз по хвилинах</p>
+    <div class="logo">
+      <img src="images/logo.png" alt="App Logo" />
+    </div>
+    <h1>Прогноз погоди щохвилини</h1>
+    <p>Два додатки — точність у кожну мить</p>
   </header>
 
-  <section id="radar">
-    <h2>Radar Now</h2>
-    <p>Карта дощу та снігу в реальному часі</p>
-    <p>Доступно на iOS: iPhone, iPad</p>
-  </section>
+  <main>
+    <section class="app">
+      <div class="app-container">
+        <img src="images/minute.png" alt="Minute App" class="app-image" />
+        <div class="app-content">
+          <h2>📱 MINUTE: Minutely Forecast</h2>
+          <p>Отримуй погодні оновлення з точністю до хвилини. Ідеально для планування поїздок, занять спортом та подій на відкритому повітрі.</p>
+          <ul>
+            <li>Прогноз щохвилини</li>
+            <li>Локалізовані сповіщення</li>
+            <li>Інтуїтивний інтерфейс</li>
+          </ul>
+          <p class="platforms">Доступно для iPhone та iPad</p>
+          <a href="https://apps.apple.com/us/app/minute-minutely-forecast-live/id6503618146" target="_blank" class="download-button">Завантажити з App Store</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="app">
+      <div class="app-container">
+        <img src="images/radar.png" alt="Radar App" class="app-image" />
+        <div class="app-content">
+          <h2>🛰️ Radar Now</h2>
+          <p>Карта опадів у реальному часі: дощ, сніг, бурі. Швидко, точно, наочно.</p>
+          <ul>
+            <li>Живе радарне зображення</li>
+            <li>Покриття по всьому світу</li>
+            <li>Легкий доступ до найсвіжішої інформації</li>
+          </ul>
+          <p class="platforms">Доступно для iPhone та iPad</p>
+          <a href="https://apps.apple.com/us/app/radar-now-rain-snow/id6744972823" target="_blank" class="download-button">Завантажити з App Store</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>Контакт: <a href="mailto:sinchuk.georgiy@gmail.com">sinchuk.georgiy@gmail.com</a></p>
-    <p>© 2024-2025 Sinchuk Georgiy</p>
+    <p>Зв’язок: <a href="mailto:sinchuk.georgiy@gmail.com">sinchuk.georgiy@gmail.com</a></p>
+    <p>© 2025 Sinchuk Georgiy</p>
   </footer>
 </body>
 </html>
