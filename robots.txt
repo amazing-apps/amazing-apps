@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: http://amazing-apps.net/sitemap.xml
+Sitemap: https://amazing-apps.net/sitemap.xml
