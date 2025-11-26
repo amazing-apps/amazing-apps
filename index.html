@@ -265,19 +265,6 @@
             padding-left: 18px;
         }
 
-        /* Бейдж */
-        .badge {
-            display: inline-block;
-            background: #ffffff;
-            color: #0066cc;
-            font-weight: 700;
-            font-size: 13px;
-            padding: 4px 10px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        /* Плашки для секцій features */
         .section-label {
             font-weight: 700;
             margin-top: 15px;
@@ -286,23 +273,13 @@
             padding-left: 8px;
         }
 
-        /* Іконка Radar Now всередині Weather+Radar */
         .small-icon {
-            width: 28px;
-            height: 28px;
+            width: 30px;
+            height: 30px;
             border-radius: 6px;
             vertical-align: middle;
             margin-left: 6px;
             border: 2px solid #ffffff55;
-        }
-
-        /* Стрілка між блоками */
-        .arrow-box {
-            text-align: center;
-            font-size: 22px;
-            font-weight: 700;
-            margin: -5px 0 10px 0;
-            color: #666;
         }
 
         footer {
@@ -348,21 +325,13 @@
     <p><em>Available for iPhone, iPad and Mac</em></p>
 </section>
 
-<!-- Стрілка-перехід -->
-<div class="arrow-box">
-    ↓ Upgrade →
-</div>
-
 <!-- Друга програма -->
 <section class="app-section blue">
-    
-    <div class="badge">Includes Radar Now</div>
 
     <img class="app-icon" src="images/a192.png" alt="Weather + Radar icon">
 
     <div class="app-title">
         Weather + Radar: Rain Map Live
-        <img class="small-icon" src="images/radar.png" alt="Radar small icon">
     </div>
 
     <p>
@@ -371,7 +340,11 @@
     </p>
 
     <!-- РОЗДІЛ 1: Містить Radar Now -->
-    <div class="section-label">Includes features of Radar Now:</div>
+    <div class="section-label">
+        Includes features of Radar Now:
+        <img class="small-icon" src="images/radar.png" alt="Radar Now small icon">
+    </div>
+
     <ul class="features">
         <li>Live radar map with real-time precipitation data</li>
         <li>30-minute rain intensity forecast</li>
@@ -399,4 +372,3 @@
 
 </body>
 </html>
-
